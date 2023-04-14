@@ -45,16 +45,33 @@
 // }
 // filter_list([1, 2, "aasf", "1", "123", 123]);
 //************************************************************************************************** */
-function countRepeated(str) {
-  let obj = {};
-  for (let i = 0; i < str.length; i++) {
-    let char = str [i].toLowerCase();
-    if (obj [char]) {
-      obj [char]++;
-    } else {
-      obj [char] = 1;
-    }
-  }
-  return obj;
-}
-console.log(countRepeated("heeeeello"));
+// function countRepeated(str) {
+//   let obj = {};
+//   for (let i = 0; i < str.length; i++) {
+//     let char = str [i].toLowerCase();
+//     if (obj [char]) {
+//       obj [char]++;
+//     } else {
+//       obj [char] = 1;
+//     }
+//   }
+//   return obj;
+// }
+// console.log(countRepeated("heeeeello"));
+//************************************************************************************************** */
+// function setAlarm(employed, vacation) {
+//      return employed && !vacation;
+// }
+// console.log(setAlarm(true, false));
+//************************************************************************************************** */
+// function sortArray(array) {
+//   let oddNumbers = array.filter((num) => num % 2 !== 0);
+//   oddNumbers.sort((a, b) => a - b);
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] % 2 !== 0) {
+//       array[i] = oddNumbers.shift();
+//     }
+//   }
+//   return array;
+// }
+// console.log(sortArray([5, 3, 2, 8, 1, 4]));
