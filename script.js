@@ -75,3 +75,22 @@
 //   return array;
 // }
 // console.log(sortArray([5, 3, 2, 8, 1, 4]));
+//************************************************************************************************** */
+// function removeExclamationMarks(s) {
+//   let newArr = s.split("");
+//   let newStr = "";
+//   newArr.forEach((element) => {
+//    if(element !== "!"){
+//     newStr += element
+//    }
+//   });
+//   return newStr;
+// }
+// console.log(removeExclamationMarks("salom dunyo!"));
+//************************************************************************************************** */
+// function sum(numbers) {
+//  return numbers.reduce((a, b) => a + b, 0);
+// }
+
+// console.log(sum([1, 5.2, 4, 0, -1]));
+//************************************************************************************************** */
