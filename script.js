@@ -94,3 +94,39 @@
 
 // console.log(sum([1, 5.2, 4, 0, -1]));
 //************************************************************************************************** */
+// function doubleChar(str) {
+//   let newArr = [];
+//   for (let i = 0; i < str.length; i++) {
+//     newArr.push(str[i] + str[i]);
+//   }
+//   return newArr;
+// }
+// console.log(doubleChar("illuminati"));
+//************************************************************************************************** */
+// function name(args) {
+//   let newArr = [];
+//   let array = args.split("");
+//   array.forEach((element, idx) => {
+//     if (idx % 2 === 0) {
+//       newArr.push(element);
+//     }
+//   });
+//   return newArr
+// }
+// console.log(name("Wow Example!"));
+//************************************************************************************************** */
+// function countRepeated(str) {
+//   let obj = {};
+//   for (let i = 0; i < str.length; i++) {
+//     let char = str[i];
+//     if (obj[char]) {
+//       obj[char]++;
+//     } else {
+//       obj[char] = 1;
+//     }
+//   }
+//   console.log(obj)
+//   return Object.values(obj).sort((prev, next) => next - prev)[0];
+// }
+// console.log(countRepeated([1, 2, 2, 8, 8, 4, 7, 8]));
+//************************************************************************************************** */
