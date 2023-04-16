@@ -99,34 +99,36 @@
 //   for (let i = 0; i < str.length; i++) {
 //     newArr.push(str[i] + str[i]);
 //   }
-//   return newArr;
+//   return newArr.join("");
 // }
 // console.log(doubleChar("illuminati"));
 //************************************************************************************************** */
-// function name(args) {
-//   let newArr = [];
+// function jumbledString(args) {
+//   let newEven = "";
+//   let newOdd = "";
 //   let array = args.split("");
 //   array.forEach((element, idx) => {
 //     if (idx % 2 === 0) {
-//       newArr.push(element);
+//       newEven += element;
+//     } else {
+//       newOdd += element;
 //     }
 //   });
-//   return newArr
+//   return newEven + newOdd;
 // }
-// console.log(name("Wow Example!"));
+// console.log(jumbledString("Wow Example!")); //WwEapeo xml!
 //************************************************************************************************** */
-// function countRepeated(str) {
+// function countRepeated(numRepeat) {
 //   let obj = {};
-//   for (let i = 0; i < str.length; i++) {
-//     let char = str[i];
+//   for (let i = 0; i < numRepeat.length; i++) {
+//     let char = numRepeat[i];
 //     if (obj[char]) {
 //       obj[char]++;
 //     } else {
 //       obj[char] = 1;
 //     }
 //   }
-//   console.log(obj)
-//   return Object.values(obj).sort((prev, next) => next - prev)[0];
+//   return Object.keys(obj).reduce((a, b) => (obj[a] > obj[b] ? a : b));
 // }
-// console.log(countRepeated([1, 2, 2, 8, 8, 4, 7, 8]));
+// console.log(countRepeated([1, 1, 2, 2, 4, 4, 4, 7, 8])); //4
 //************************************************************************************************** */
