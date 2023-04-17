@@ -1,3 +1,4 @@
+//************************************************************************************************** */
 // function sumEvenNumbers(input) {
 //   let newArr = 0;
 //   input.forEach((elemet) => {
@@ -131,4 +132,34 @@
 //   return Object.keys(obj).reduce((a, b) => (obj[a] > obj[b] ? a : b));
 // }
 // console.log(countRepeated([1, 1, 2, 2, 4, 4, 4, 7, 8])); //4
+//************************************************************************************************** */
+// function greatestDistance(arr) {
+//   let maxDistance = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = arr.length - 1; j > i; j--) {
+//       if (arr[i] === arr[j]) {
+//         let distance = j - i;
+//         if (distance > maxDistance) {
+//           maxDistance = distance;
+//         }
+//         break;
+//       }
+//     }
+//   }
+//   return maxDistance;
+// }
+// console.log(greatestDistance([9, 7, 1, 2, 3, 7, 0, -1, -2]));
+//************************************************************************************************** */
+// function friend(friends) {
+//   let newArr = [];
+//   friends.forEach((element) => {
+//     if (element.length === 4) {
+//       newArr.push(element);
+//     }
+//   });
+
+//   return newArr;
+// }
+// console.log(friend(["Ryan", "Kieran", "Mark"]));
 //************************************************************************************************** */
