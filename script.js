@@ -163,3 +163,53 @@
 // }
 // console.log(friend(["Ryan", "Kieran", "Mark"]));
 //************************************************************************************************** */
+// function basicOp(operation, value1, value2) {
+//   for (let i = 0; i < operation.length; i++) {
+//     let oper = operation[i];
+//     if (oper === "+") {
+//       return value1 + value2;
+//     } else if (oper === "-") {
+//       return value1 - value2;
+//     }
+//     else if(oper === "*"){
+//         return value1 * value2;
+//     }
+//     return value1 / value2
+//   }
+// }
+// console.log(basicOp("+", 4, 7));
+
+// const lineItems = [
+//   { description: "Eggs (Dozen)", quantity: 1, price: 3, total: 3 },
+//   { description: "Cheese", quantity: 0.5, price: 5, total: 2.5 },
+//   { description: "Butter", quantity: 2, price: 6, total: 12 },
+// ];
+// // let cur = lineItems.reduce((sum, li) => sum + li.total, 0);
+// // console.log(cur);
+// // let cur = lineItems.map((li) => li.total).reduce((sum, val) => sum + val, 0);
+// let cur = lineItems.map((li) => li.total).reduce(sumReducer, 0);
+
+// console.log(cur);
+// const dates = [
+//   "2019/06/01",
+//   "2018/06/01",
+//   "2019/09/01", // This is the most recent date, but how to find it?
+//   "2018/09/01",
+// ]
+// const maxDate = dates.reduce((max, d) => (d > max ? d : max), dates[0]);
+// console.log(maxDate);//2019/09/01
+// const characters = [
+//   { name: "Jean-Luc Picard", age: 59 },
+//   { name: "Will Riker", age: 29 },
+//   { name: "Deanna Troi", age: 29 },
+// ];
+// const ages = characters.map((char) => char.age);
+// let cur = ages.reduce((acc, age) => {
+//   if (acc[age]) {
+//     acc[age]++;
+//   } else {
+//     acc[age] = 1;
+//   }
+//   return acc;
+// }, {});
+// console.log(cur); //{ '29': 2, '59': 1 }
