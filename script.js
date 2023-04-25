@@ -178,7 +178,7 @@
 //   }
 // }
 // console.log(basicOp("+", 4, 7));
-
+//************************************************************************************************** */
 // const lineItems = [
 //   { description: "Eggs (Dozen)", quantity: 1, price: 3, total: 3 },
 //   { description: "Cheese", quantity: 0.5, price: 5, total: 2.5 },
@@ -186,10 +186,11 @@
 // ];
 // // let cur = lineItems.reduce((sum, li) => sum + li.total, 0);
 // // console.log(cur);
+//************************************************************************************************** */
 // // let cur = lineItems.map((li) => li.total).reduce((sum, val) => sum + val, 0);
 // let cur = lineItems.map((li) => li.total).reduce(sumReducer, 0);
-
 // console.log(cur);
+//************************************************************************************************** */
 // const dates = [
 //   "2019/06/01",
 //   "2018/06/01",
@@ -198,6 +199,7 @@
 // ]
 // const maxDate = dates.reduce((max, d) => (d > max ? d : max), dates[0]);
 // console.log(maxDate);//2019/09/01
+//************************************************************************************************** */
 // const characters = [
 //   { name: "Jean-Luc Picard", age: 59 },
 //   { name: "Will Riker", age: 29 },
@@ -213,3 +215,4 @@
 //   return acc;
 // }, {});
 // console.log(cur); //{ '29': 2, '59': 1 }
+//************************************************************************************************** */
