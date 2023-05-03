@@ -1,4 +1,3 @@
-
 //************************************************************************************************** */
 // ushbu arraydagi stringni inxednini toping.
 // const myArray = [[false, true], [1, 2], 99, "yaxshi"];
@@ -473,3 +472,51 @@
 // }, {});
 // console.log(cur); //{ '29': 2, '59': 1 }
 //************************************************************************************************** */
+// A function to swap two elements in an array
+// function swap(arr, i, j) {
+//   let temp = arr[i];
+//   arr[i] = arr[j];
+//   arr[j] = temp;
+// }
+/************************************************************************************************** */
+// function permute(arr, start, end, result) {
+//   if (start === end) {
+//     result.push(arr.join(""));
+//   } else {
+//     for (let i = start; i <= end; i++) {
+//       swap(arr, start, i);
+//       permute(arr, start + 1, end, result);
+//       swap(arr, start, i);
+//     }
+//   }
+// }
+/************************************************************************************************** */
+// function removeDuplicates(arr) {
+//   let set = new Set();
+//   for (let element of arr) {
+//     set.add(element);
+//   }
+//   return Array.from(set);
+// }
+/************************************************************************************************** */
+// function permutations(input) {
+//   let inputArr = input.split("");
+//   let result = [];
+//   permute(inputArr, 0, inputArr.length - 1, result);
+//   return removeDuplicates(result);
+// }
+/************************************************************************************************** */
+// function alphabetPosition(text) {
+//   let result = "";
+//   for (let i = 0; i < text.length; i++) {
+//     let code = text.toUpperCase().charCodeAt(i);
+//     if (code > 64 && code < 91) result += code - 64 + " ";
+//   }
+//   return result.slice(0, result.length - 1);
+// }
+// console.log(alphabetPosition("The sunset sets at twelve o' clock."));
+/************************************************************************************************** */
+// let alphabetPosition = (text) => text.toUpperCase().replace(/[^a-zA-Z]+/g, "").split("").map((ch) => ch.charCodeAt(0) - 64).join(" ");
+// console.log(alphabetPosition("T_he sunset sets a58t twe5lve o' clock."));
+//20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11
+/************************************************************************************************** */
